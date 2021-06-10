@@ -1,31 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weahter Dashboard</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="header">
-    <h1>Weather Dashboard</h1>
- </div>
-    <div class="entry">
-       <input type="text" class="inputValue" placeholder="Enter town">
-       <input type="submit" value="submit" class="btn">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="header">
+        <h1>Weather Dashboard</h1>
+      </div>
+      <div class="row">
+        <div class="col-4 bg-light" >
+            <div class="input-group mb-3">
+
+          <input
+            class="form-control"
+            type="text"
+            id="inputValue"
+            placeholder="Enter town"
+          />
+          <input
+            type="button"
+            value="submit"
+            id="btn"
+            class="btn btn-primary"
+          />
+          <input
+            type="button"
+            value="delete"
+            onclick="deleteCity()"
+            id="deletebtn"
+            class="btn btn-secondary"
+          />
+            </div>
+          <div class="list-city" id="listCity"></div>
+
+        </div>
+
+        <div class="col-8">
+            <div class="row p-2">
+                <div id="currentWeather" class="card">
+                    <!-- main card -->
+                    <div class="card-body">
+                     
+                    </div>
+                </div>
+            </div>
+                <div class="row">
+                    <h4>5-Day Forecast:</h4>
+                </div>
+             <!-- five day wather -->
+             <div id="weeklyForecast" class="row">
+                <div id="oneDay" class="card text-white bg-secondary mb-3" style="max-width: 16rem;">
+                    <div class="card-body"></div>
+                </div>
+                <div id="twoDay" class="card text-white bg-secondary mb-3" style="max-width: 16rem;">
+                    <div class="card-body"></div>
+                </div>
+                <div id="threeDay" class="card text-white bg-secondary mb-3" style="max-width: 16rem;">
+                    <div class="card-body"></div>
+                </div>
+
+                <div id="fourDay" class="card text-white bg-secondary mb-3" style="max-width: 16rem;">
+                    <div class="card-body"></div>
+                </div>
+                <div id="fiveDay" class="card text-white bg-secondary mb-3" style="max-width: 16rem;">
+                    <div class="card-body"></div>
+                </div>
+
+            </div>
+        </div>
+            <!--end-->
+
+            
+        </div>
+
+                
+
+
     </div>
 
-    <div class="show">
-        <h2 class="appname"></h2>
-        <p class="description"></p>
-        <p class="temperature"></p>
-
-    </div>
     
+    <script
+      src="https://kit.fontawesome.com/3c309b0cab.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
 
-
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

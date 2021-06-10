@@ -1,53 +1,41 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap');
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    font-family: 'Times New Roman', Times, serif;
-    background-color: cyan;
+body {
+    font-family: 'Raleway', sans-serif;
 }
-
-.entry{
-    text-align: center;
-    margin: px 0;
-}
-
-input[type ="text"]{
-    height: 60px;
-    width: 700px;
-    font-weight: bold;
-    background-color: rgb(247, 147, 147);
-    font-family: 'Times New Roman', Times, serif;
-    border-radius: 5px;
-    font-size: 25px;
-    border: none;
+.header {
+    height: 100px;
+    background: cadetblue;
     color: white;
-    
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
-.show {
+
+  .input-group {
+    margin-bottom: 15px;
+  }
+  .header-style {
+    font-size: 50px;
+    color: #ffffff;
+    font-family: 'Mulish', sans-serif;
     text-align: center;
-    margin: 300px 0;
-     
-}
-
-.btn {
-    height: 60px;
-    width: 100px;
-    border-radius: 3%;
-}
-
-h1 {
-    text-align: center;
-    margin: 250px;
-    color: green;
-    
-
-}
-
-.header{
-    margin top: 200px;
-}
+  }
+  .card {
+    width:100%;
+  }
+  .fiveDay{    
+    background-color: rgb(41, 141, 180);
+    margin: 15px;
+  }
+  h3 {
+    float:left;
+  }
